@@ -31,6 +31,20 @@ public class MainActivity extends BaseActivity {
     @Override
     public void setUpEvents() {
 
+        binding.webLinkBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String naverLinkUrl = "http://naver.com";
+
+                Uri myUri = Uri.parse(naverLinkUrl);
+
+                Intent myIntent = new Intent(Intent.ACTION_VIEW, myUri);
+                startActivity(myIntent);
+
+            }
+        });
+
         binding.smsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
