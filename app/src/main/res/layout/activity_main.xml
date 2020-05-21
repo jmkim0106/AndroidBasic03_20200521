@@ -50,6 +50,6 @@
             android:layout_height="wrap_content"
             android:text="수정하기" />
 
-    </LinearLayot>
+    </LinearLayout>
 
 </LinearLayout>
