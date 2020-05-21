@@ -28,10 +28,12 @@ public class EditEmailActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 String email = binding.emailEdt.getText().toString();
-                Intent emailIntent = new Intent();
-                emailIntent.putExtra("editEmail", emailIntent);
 
-                setResult(RESULT_OK, emailIntent);
+                Intent myIntent = new Intent();
+                myIntent.putExtra("editEmail", email);
+
+                setResult(RESULT_OK, myIntent);
+
                 finish();
             }
         });

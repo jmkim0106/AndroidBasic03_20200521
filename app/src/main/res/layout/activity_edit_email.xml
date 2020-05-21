@@ -19,6 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:hint="새로운 이메일을 입력하세요."
+            android:inputType="textEmailAddress"
             android:singleLine="true" />
 
         <Button
